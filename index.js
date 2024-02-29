@@ -31,7 +31,9 @@ app.use(cors());
 
 
 //Available Route
-
+app.get('/', (req, res) => {
+    res.json("eNotebook backend Api")
+});
 app.use('/api/auth', auth);
 app.use('/api/notes', notes);
 
