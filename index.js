@@ -15,7 +15,7 @@ const port = 4000
 app.use(express.json());
 app.use(
     cors({
-        origin: 'https://merntutorialbackend-ivory.vercel.app',
+        origin: 'https://merntutorialfrontend-sigma.vercel.app',
         methods: ['GET', 'POST', 'PUT', 'DELETE'],
         allowedHeaders: ['content-type']
     })
