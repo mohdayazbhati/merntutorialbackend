@@ -13,7 +13,13 @@ const port = 4000
 //*moddleware
 
 app.use(express.json());
-app.use(cors());
+app.use(
+    cors({
+        origin: 'https://merntutorialbackend-ivory.vercel.app',
+        methods: ['GET', 'POST', 'PUT', 'DELETE'],
+        allowedHeaders: ['content-type']
+    })
+)
 
 //*route
 
